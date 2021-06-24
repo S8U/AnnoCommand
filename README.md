@@ -41,7 +41,7 @@ public class TestCommand {
     @Command(
             parent = "test",
             name = "player",
-            description = "§ePlayer test command"
+            description = "§ePlayer only test command"
     )
     public static void test_player(Player player, CommandResult result) {
         player.sendMessage("Hello " + player.getName() + "!");
@@ -50,7 +50,7 @@ public class TestCommand {
     @Command(
             parent = "test",
             name = "permPlayer",
-            description = "§ePlayer permission test command",
+            description = "§ePlayer only permission test command",
             permission = "test.admin"
     )
     public static void test_permPlayer(Player player, CommandResult result) {
@@ -60,7 +60,7 @@ public class TestCommand {
     @Command(
             parent = "test",
             name = "console",
-            description = "§eConsole test command"
+            description = "§eConsole only test command"
     )
     public static void test_console(ConsoleCommandSender sender, CommandResult result) {
         sender.sendMessage("Hello Console!");
